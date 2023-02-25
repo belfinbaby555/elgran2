@@ -5,7 +5,7 @@ function download(){
 function navi(){
     var navi=document.getElementById("nav-item");
     if(navi.style.height==="0%"){
-        navi.style.height="40%"
+        navi.style.height="30%"
     }
     else{
        navi.style.height="0%";
