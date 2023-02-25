@@ -12,10 +12,10 @@
             <div class="nav-bar">
                 <b class="logo">YouTube</b>
             <button onclick="navi()" class="nav-button"><i class="fa-fa-navicon"></i></button>
-            <div class="nav-item" id="nav-item">
-            <a href="#" class="nav-option">Home</a>
+            <div class="nav-item" id="nav-item" style="height: 0%;">
+            <a href="#" class="nav-option">About Us</a>
             <a href="#" class="nav-option">Features</a>
-            <a href="#" class="nav-option">About US</a>
+            <a href="#" class="nav-option">Home</a>
         </div>
     </div>
             <h1>Download Videos and Audios Fast and Secure</h1>
@@ -30,14 +30,16 @@
                 <h4>vedio rydfhnd fdndfg dfjdfgn dfghd dfghdf ghd </h4>
             </div>
             <div class="tabs">
-                <button class="button2" onclick="tabs('video')">Video</button>
-                <button class="button2" onclick="tabs('audio')">Audio</button>
+                <button class="button2" onclick="tabs(0, 'video')">Video</button>
+                <button class="button2" onclick="tabs(1, 'audio')">Audio</button>
+                <button class="button2" onclick="tabs(2, 'Trimmer')">Trimmer</button>
+                <button class="button2" onclick="tabs(3, 'History')">History</button>
                 <div class="videoandaudio" id="video">
                     <table>
                         <tr>
-                            <td style="font-size: 25px;">Quality</td>
-                            <td style="font-size: 25px;">Download</td>
-                            <td style="font-size: 25px;">Trimmer</td>
+                            <td class="font25">Quality</td>
+                            <td class="font25">Download</td>
+                           
                         </tr>
                         <tr>
                             <td>1080p</td>
@@ -63,7 +65,85 @@
                     </table>
                 </div>
                 <div class="videoandaudio" id="audio">
-                    aud
+                    <table>
+                        <tr>
+                            <td class="font25">Format</td>
+                            <td class="font25">Download</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>MP3</td>
+                            <td><button class="downloadbut">Download</button></td>
+                        </tr>
+                        <tr>
+                            <td>M4A</td>
+                            <td><button class="downloadbut">Download</button></td>
+                        </tr>
+                        <tr>
+                            <td>WAV</td>
+                            <td><button class="downloadbut">Download</button></td>
+                        </tr>
+                        <tr>
+                            <td>ACC</td>
+                            <td><button class="downloadbut">Download</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="videoandaudio" id="Trimmer">
+                    <h5 class="font25">Trimmer</h5>
+                    <table>
+                        <tr>
+                            <td>From</td>
+                            <td>
+                                H:<input type="text" value="00" min="0" max="24" class="inputtime">
+                                M:<input type="text" value="00" min="0" max="60" class="inputtime"> 
+                                S:<input type="text" value="00" min="0" max="60" class="inputtime"></td>
+                        </tr>
+                        <tr>
+                                <td>To</td>
+                                <td>
+                                H:<input type="text" value="00" min="0" max="24" class="inputtime">
+                                M:<input type="text" value="00" min="0" max="60" class="inputtime"> 
+                                S:<input type="text" value="00" min="0" max="60" class="inputtime"></td>
+                        </tr>
+                    </table>
+                    
+                    <table>
+                        <tr>
+                            <tr>
+                                <td class="font25">Type</td>
+                                <td class="font25">Quality/<br>Format</td>
+                                <td class="font25">Download</td>
+                               
+                            </tr>
+                            <td>Video</td>
+                            <td>
+                                <select>
+                                    <option value="">1080p</option>
+                                    <option value="">720p</option>
+                                    <option value="">360p</option>
+                                    <option value="">240p</option>
+                                    <option value="">144p</option>
+                                </select>
+                            </td>
+                            <td><button class="downloadbut">Download</button></td>
+                        </tr>
+                        <tr>
+                            <td>Audio</td>
+                            <td>
+                                <select>
+                                    <option value="">MP3</option>
+                                    <option value="">M4A</option>
+                                    <option value="">WAV</option>
+                                    <option value="">ACC</option>
+                                </select>
+                            </td>
+                            <td><button class="downloadbut">Download</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="videoandaudio" id="History">
+                    <button><img src="" alt=""></button>
                 </div>
             </div>
     </div>
@@ -84,35 +164,35 @@
         <section class="features">
             <h1>Features</h1>
         <div class="card">
-            <i class="fa fa-download" class="i"style="font-size: 75px;"></i>
+            <i class="fa fa-download"></i>
             <h2>Fast Download</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
                 aliquip ex ea commodo consequat. </p>
         </div>
         <div class="card">
-            <i class="fa fa-diamond" style="font-size: 75px;"></i>
+            <i class="fa fa-diamond"></i>
             <h2>Free of Charge</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
                 aliquip ex ea commodo consequat. </p>
         </div>
         <div class="card">
-            <i class="fa fa-lock" style="font-size: 75px;"></i>
+            <i class="fa fa-lock"></i>
             <h2>Secure</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
                 aliquip ex ea commodo consequat. </p>
         </div>
         <div class="card">
-            <i class="fa fa-hdd-o" style="font-size: 75px;"></i>
+            <i class="fa fa-hdd-o" ></i>
             <h2>No Installation</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
                 aliquip ex ea commodo consequat. </p>
         </div>
         <div class="card">
-            <i class="fa fa-user-o" style="font-size: 75px;"></i>
+            <i class="fa fa-user-o"></i>
             <h2>User Friendly</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
@@ -120,7 +200,7 @@
         </div>
         
         <div class="card">
-            <i class="fa fa-smile-o" style="font-size: 75px;"></i>
+            <i class="fa fa-smile-o"></i>
             <h2>Happy Customers</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
