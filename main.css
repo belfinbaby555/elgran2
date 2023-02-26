@@ -123,8 +123,7 @@ form{
     width:300px;
     height: auto;
     border:0px;
-    margin: 5% 0 0 9%;
-    float: left;
+    
     text-align: center;
     border-radius: 5px;
     box-shadow: 1px 1px 15px rgb(163, 163, 163);
@@ -203,7 +202,8 @@ h4{
 table{
     border-collapse: collapse;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 td,tr{
     border: 1px solid rgb(182, 181, 181);
@@ -215,10 +215,13 @@ td{
     font-family: 'lato',sans-serif;
 }
 #Trimmer table:nth-of-type(2){
-   margin-left: 25px;
+   margin-left: auto;
 }
 #Trimmer table:nth-of-type(1) td,tr{
     border: 0cap;
+ }
+ #Trimmer table:nth-of-type(1){
+    margin: 0% auto;
  }
 .download span{
     display: flex;
@@ -304,7 +307,8 @@ h3{
         height: 285px;
     }
     table{
-        margin-left: 10%;
+        margin-left: auto;
+        margin-right: auto;
     }
     td,tr{
         padding: 12px 24px;
@@ -314,10 +318,11 @@ h3{
         font-size: 22px;
     }
     #Trimmer table:nth-of-type(2){
-        margin-left: 2%;
+        margin-left: auto;
+        margin-right: auto;
     }
     #Trimmer table:nth-of-type(1){
-        margin-left: 5%;
+        margin:0 auto;
     }
     .inputtime{
         width: 35px;
