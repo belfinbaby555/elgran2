@@ -30,61 +30,41 @@
                 <h4>vedio rydfhnd fdndfg dfjdfgn dfghd dfghdf ghd </h4>
             </div>
             <div class="tabs">
-                <button class="button2" onclick="tabs(0, 'video')">Video</button>
-                <button class="button2" onclick="tabs(1, 'audio')">Audio</button>
-                <button class="button2" onclick="tabs(2, 'Trimmer')">Trimmer</button>
-                <button class="button2" onclick="tabs(3, 'History')">History</button>
+                
+                <button class="button2" onclick="tabs(0, 'video')">Video/Audio</button>
+                <button class="button2" onclick="tabs(1, 'Trimmer')">Trimmer</button>
+                <button class="button2" onclick="tabs(2, 'History')">History</button>
                 <div class="videoandaudio" id="video">
                     <table>
                         <tr>
-                            <td class="font25">Quality</td>
-                            <td class="font25">Download</td>
-                           
-                        </tr>
-                        <tr>
-                            <td>1080p</td>
+                            <tr>
+                                <td class="font25">Type</td>
+                                <td class="font25">Quality/<br>Format</td>
+                                <td class="font25">Download</td>
+                               
+                            </tr>
+                            <td>Video</td>
+                            <td>
+                                <select>
+                                    <option value="">1080p</option>
+                                    <option value="">720p</option>
+                                    <option value="">360p</option>
+                                    <option value="">240p</option>
+                                    <option value="">144p</option>
+                                </select>
+                            </td>
                             <td><button class="downloadbut">Download</button></td>
                         </tr>
                         <tr>
-                            <td>720p</td>
-                            <td><button class="downloadbut">Download</button></td>
-                        </tr>
-                        <tr>
-                            <td>360p</td>
-                            <td><button class="downloadbut">Download</button></td>
-                        </tr>
-                        <tr>
-                            <td>240p</td>
-                            <td><button class="downloadbut">Download</button></td>
-                        </tr>
-                        <tr>
-                            <td>144p</td>
-                            <td><button class="downloadbut">Download</button></td>
-                        </tr>
-
-                    </table>
-                </div>
-                <div class="videoandaudio" id="audio">
-                    <table>
-                        <tr>
-                            <td class="font25">Format</td>
-                            <td class="font25">Download</td>
-                           
-                        </tr>
-                        <tr>
-                            <td>MP3</td>
-                            <td><button class="downloadbut">Download</button></td>
-                        </tr>
-                        <tr>
-                            <td>M4A</td>
-                            <td><button class="downloadbut">Download</button></td>
-                        </tr>
-                        <tr>
-                            <td>WAV</td>
-                            <td><button class="downloadbut">Download</button></td>
-                        </tr>
-                        <tr>
-                            <td>ACC</td>
+                            <td>Audio</td>
+                            <td>
+                                <select>
+                                    <option value="">MP3</option>
+                                    <option value="">M4A</option>
+                                    <option value="">WAV</option>
+                                    <option value="">ACC</option>
+                                </select>
+                            </td>
                             <td><button class="downloadbut">Download</button></td>
                         </tr>
                     </table>
