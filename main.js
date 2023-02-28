@@ -1,3 +1,4 @@
+const { replaceWith } = require("cheerio/lib/api/manipulation");
 
 function download(){
     document.getElementById("download").style.display="inherit";
