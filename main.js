@@ -15,6 +15,7 @@ function navi(){
 
 function tabs(evt,tabName) {
     var i, tabcontent, tablinks;
+    var color="#d11d27";
   
     tabcontent = document.getElementsByClassName("videoandaudio");
     for (i = 0; i < tabcontent.length; i++) {
@@ -28,6 +29,6 @@ function tabs(evt,tabName) {
     }
   
     document.getElementById(tabName).style.display = "block";
-    tablinks[evt].style.backgroundColor="rgb(255, 60, 0)";
+    tablinks[evt].style.backgroundColor=color;
     tablinks[evt].style.color="white";
   } 
